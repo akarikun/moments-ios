@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B80CEAD02C4CDB930099A15D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CEACF2C4CDB930099A15D /* AppDelegate.swift */; };
+		B80CEAD22C4CDB930099A15D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CEAD12C4CDB930099A15D /* SceneDelegate.swift */; };
+		B80CEAD42C4CDB930099A15D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CEAD32C4CDB930099A15D /* ViewController.swift */; };
+		B80CEAD72C4CDB930099A15D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B80CEAD52C4CDB930099A15D /* Main.storyboard */; };
+		B80CEAD92C4CDB960099A15D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B80CEAD82C4CDB960099A15D /* Assets.xcassets */; };
+		B80CEADC2C4CDB960099A15D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B80CEADA2C4CDB960099A15D /* LaunchScreen.storyboard */; };
+		B80CEAE72C4CDB960099A15D /* moments_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CEAE62C4CDB960099A15D /* moments_iosTests.swift */; };
+		B80CEAF12C4CDB960099A15D /* moments_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CEAF02C4CDB960099A15D /* moments_iosUITests.swift */; };
+		B80CEAF32C4CDB960099A15D /* moments_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CEAF22C4CDB960099A15D /* moments_iosUITestsLaunchTests.swift */; };
+		B80CEB002C4CE2080099A15D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CEAFF2C4CE2080099A15D /* LoginVC.swift */; };
+		B80CEB022C4CE2540099A15D /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CEB012C4CE2540099A15D /* ListVC.swift */; };
+		B80CEB052C4CE3F40099A15D /* ContentViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B80CEB042C4CE3F40099A15D /* ContentViewCell.xib */; };
+		B80CEB072C4CE6EF0099A15D /* ContentViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CEB062C4CE6EF0099A15D /* ContentViewCell.swift */; };
+		B8FA69452C4D357D00328CFB /* Just in Frameworks */ = {isa = PBXBuildFile; productRef = B8FA69442C4D357D00328CFB /* Just */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B80CEAE32C4CDB960099A15D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B80CEAC42C4CDB930099A15D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B80CEACB2C4CDB930099A15D;
+			remoteInfo = "moments-ios";
+		};
+		B80CEAED2C4CDB960099A15D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B80CEAC42C4CDB930099A15D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B80CEACB2C4CDB930099A15D;
+			remoteInfo = "moments-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B80CEACC2C4CDB930099A15D /* moments-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "moments-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B80CEACF2C4CDB930099A15D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B80CEAD12C4CDB930099A15D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B80CEAD32C4CDB930099A15D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B80CEAD62C4CDB930099A15D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B80CEAD82C4CDB960099A15D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B80CEADB2C4CDB960099A15D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B80CEADD2C4CDB960099A15D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B80CEAE22C4CDB960099A15D /* moments-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "moments-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B80CEAE62C4CDB960099A15D /* moments_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moments_iosTests.swift; sourceTree = "<group>"; };
+		B80CEAEC2C4CDB960099A15D /* moments-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "moments-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B80CEAF02C4CDB960099A15D /* moments_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moments_iosUITests.swift; sourceTree = "<group>"; };
+		B80CEAF22C4CDB960099A15D /* moments_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moments_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B80CEAFF2C4CE2080099A15D /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		B80CEB012C4CE2540099A15D /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
+		B80CEB042C4CE3F40099A15D /* ContentViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentViewCell.xib; sourceTree = "<group>"; };
+		B80CEB062C4CE6EF0099A15D /* ContentViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B80CEAC92C4CDB930099A15D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8FA69452C4D357D00328CFB /* Just in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B80CEADF2C4CDB960099A15D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B80CEAE92C4CDB960099A15D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B80CEAC32C4CDB930099A15D = {
+			isa = PBXGroup;
+			children = (
+				B80CEACE2C4CDB930099A15D /* moments-ios */,
+				B80CEAE52C4CDB960099A15D /* moments-iosTests */,
+				B80CEAEF2C4CDB960099A15D /* moments-iosUITests */,
+				B80CEACD2C4CDB930099A15D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B80CEACD2C4CDB930099A15D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B80CEACC2C4CDB930099A15D /* moments-ios.app */,
+				B80CEAE22C4CDB960099A15D /* moments-iosTests.xctest */,
+				B80CEAEC2C4CDB960099A15D /* moments-iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B80CEACE2C4CDB930099A15D /* moments-ios */ = {
+			isa = PBXGroup;
+			children = (
+				B80CEB032C4CE3C50099A15D /* UI */,
+				B80CEACF2C4CDB930099A15D /* AppDelegate.swift */,
+				B80CEAD12C4CDB930099A15D /* SceneDelegate.swift */,
+				B80CEAD32C4CDB930099A15D /* ViewController.swift */,
+				B80CEAFF2C4CE2080099A15D /* LoginVC.swift */,
+				B80CEB012C4CE2540099A15D /* ListVC.swift */,
+				B80CEAD52C4CDB930099A15D /* Main.storyboard */,
+				B80CEAD82C4CDB960099A15D /* Assets.xcassets */,
+				B80CEADA2C4CDB960099A15D /* LaunchScreen.storyboard */,
+				B80CEADD2C4CDB960099A15D /* Info.plist */,
+			);
+			path = "moments-ios";
+			sourceTree = "<group>";
+		};
+		B80CEAE52C4CDB960099A15D /* moments-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				B80CEAE62C4CDB960099A15D /* moments_iosTests.swift */,
+			);
+			path = "moments-iosTests";
+			sourceTree = "<group>";
+		};
+		B80CEAEF2C4CDB960099A15D /* moments-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B80CEAF02C4CDB960099A15D /* moments_iosUITests.swift */,
+				B80CEAF22C4CDB960099A15D /* moments_iosUITestsLaunchTests.swift */,
+			);
+			path = "moments-iosUITests";
+			sourceTree = "<group>";
+		};
+		B80CEB032C4CE3C50099A15D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B80CEB042C4CE3F40099A15D /* ContentViewCell.xib */,
+				B80CEB062C4CE6EF0099A15D /* ContentViewCell.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B80CEACB2C4CDB930099A15D /* moments-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B80CEAF62C4CDB960099A15D /* Build configuration list for PBXNativeTarget "moments-ios" */;
+			buildPhases = (
+				B80CEAC82C4CDB930099A15D /* Sources */,
+				B80CEAC92C4CDB930099A15D /* Frameworks */,
+				B80CEACA2C4CDB930099A15D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "moments-ios";
+			packageProductDependencies = (
+				B8FA69442C4D357D00328CFB /* Just */,
+			);
+			productName = "moments-ios";
+			productReference = B80CEACC2C4CDB930099A15D /* moments-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B80CEAE12C4CDB960099A15D /* moments-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B80CEAF92C4CDB960099A15D /* Build configuration list for PBXNativeTarget "moments-iosTests" */;
+			buildPhases = (
+				B80CEADE2C4CDB960099A15D /* Sources */,
+				B80CEADF2C4CDB960099A15D /* Frameworks */,
+				B80CEAE02C4CDB960099A15D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B80CEAE42C4CDB960099A15D /* PBXTargetDependency */,
+			);
+			name = "moments-iosTests";
+			productName = "moments-iosTests";
+			productReference = B80CEAE22C4CDB960099A15D /* moments-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B80CEAEB2C4CDB960099A15D /* moments-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B80CEAFC2C4CDB960099A15D /* Build configuration list for PBXNativeTarget "moments-iosUITests" */;
+			buildPhases = (
+				B80CEAE82C4CDB960099A15D /* Sources */,
+				B80CEAE92C4CDB960099A15D /* Frameworks */,
+				B80CEAEA2C4CDB960099A15D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B80CEAEE2C4CDB960099A15D /* PBXTargetDependency */,
+			);
+			name = "moments-iosUITests";
+			productName = "moments-iosUITests";
+			productReference = B80CEAEC2C4CDB960099A15D /* moments-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B80CEAC42C4CDB930099A15D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					B80CEACB2C4CDB930099A15D = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					B80CEAE12C4CDB960099A15D = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = B80CEACB2C4CDB930099A15D;
+					};
+					B80CEAEB2C4CDB960099A15D = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = B80CEACB2C4CDB930099A15D;
+					};
+				};
+			};
+			buildConfigurationList = B80CEAC72C4CDB930099A15D /* Build configuration list for PBXProject "moments-ios" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B80CEAC32C4CDB930099A15D;
+			packageReferences = (
+				B8FA69432C4D357D00328CFB /* XCRemoteSwiftPackageReference "Just" */,
+			);
+			productRefGroup = B80CEACD2C4CDB930099A15D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B80CEACB2C4CDB930099A15D /* moments-ios */,
+				B80CEAE12C4CDB960099A15D /* moments-iosTests */,
+				B80CEAEB2C4CDB960099A15D /* moments-iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B80CEACA2C4CDB930099A15D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B80CEADC2C4CDB960099A15D /* LaunchScreen.storyboard in Resources */,
+				B80CEAD92C4CDB960099A15D /* Assets.xcassets in Resources */,
+				B80CEB052C4CE3F40099A15D /* ContentViewCell.xib in Resources */,
+				B80CEAD72C4CDB930099A15D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B80CEAE02C4CDB960099A15D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B80CEAEA2C4CDB960099A15D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B80CEAC82C4CDB930099A15D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B80CEAD42C4CDB930099A15D /* ViewController.swift in Sources */,
+				B80CEB022C4CE2540099A15D /* ListVC.swift in Sources */,
+				B80CEB072C4CE6EF0099A15D /* ContentViewCell.swift in Sources */,
+				B80CEAD02C4CDB930099A15D /* AppDelegate.swift in Sources */,
+				B80CEB002C4CE2080099A15D /* LoginVC.swift in Sources */,
+				B80CEAD22C4CDB930099A15D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B80CEADE2C4CDB960099A15D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B80CEAE72C4CDB960099A15D /* moments_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B80CEAE82C4CDB960099A15D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B80CEAF32C4CDB960099A15D /* moments_iosUITestsLaunchTests.swift in Sources */,
+				B80CEAF12C4CDB960099A15D /* moments_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B80CEAE42C4CDB960099A15D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B80CEACB2C4CDB930099A15D /* moments-ios */;
+			targetProxy = B80CEAE32C4CDB960099A15D /* PBXContainerItemProxy */;
+		};
+		B80CEAEE2C4CDB960099A15D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B80CEACB2C4CDB930099A15D /* moments-ios */;
+			targetProxy = B80CEAED2C4CDB960099A15D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B80CEAD52C4CDB930099A15D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B80CEAD62C4CDB930099A15D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B80CEADA2C4CDB960099A15D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B80CEADB2C4CDB960099A15D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B80CEAF42C4CDB960099A15D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B80CEAF52C4CDB960099A15D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B80CEAF72C4CDB960099A15D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "moments-ios/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = moments;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.akari.moments-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B80CEAF82C4CDB960099A15D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "moments-ios/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = moments;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.akari.moments-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B80CEAFA2C4CDB960099A15D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.akari.moments-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/moments-ios.app/moments-ios";
+			};
+			name = Debug;
+		};
+		B80CEAFB2C4CDB960099A15D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.akari.moments-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/moments-ios.app/moments-ios";
+			};
+			name = Release;
+		};
+		B80CEAFD2C4CDB960099A15D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.akari.moments-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "moments-ios";
+			};
+			name = Debug;
+		};
+		B80CEAFE2C4CDB960099A15D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.akari.moments-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "moments-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B80CEAC72C4CDB930099A15D /* Build configuration list for PBXProject "moments-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B80CEAF42C4CDB960099A15D /* Debug */,
+				B80CEAF52C4CDB960099A15D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B80CEAF62C4CDB960099A15D /* Build configuration list for PBXNativeTarget "moments-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B80CEAF72C4CDB960099A15D /* Debug */,
+				B80CEAF82C4CDB960099A15D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B80CEAF92C4CDB960099A15D /* Build configuration list for PBXNativeTarget "moments-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B80CEAFA2C4CDB960099A15D /* Debug */,
+				B80CEAFB2C4CDB960099A15D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B80CEAFC2C4CDB960099A15D /* Build configuration list for PBXNativeTarget "moments-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B80CEAFD2C4CDB960099A15D /* Debug */,
+				B80CEAFE2C4CDB960099A15D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B8FA69432C4D357D00328CFB /* XCRemoteSwiftPackageReference "Just" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dduan/Just.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B8FA69442C4D357D00328CFB /* Just */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B8FA69432C4D357D00328CFB /* XCRemoteSwiftPackageReference "Just" */;
+			productName = Just;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B80CEAC42C4CDB930099A15D /* Project object */;
+}
