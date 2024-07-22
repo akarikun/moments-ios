@@ -14,14 +14,14 @@ class LoginVC: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        if let widthConstraint = contentView.constraints.first(where: { $0.firstAttribute == .width }) {
-            widthConstraint.constant = UIScreen.main.bounds.width - 20
-            widthConstraint.priority = UILayoutPriority(750)
-        }
+        
 
-        if UIDevice.current.userInterfaceIdiom == .pad {
-            contentView.widthAnchor.constraint(equalToConstant: 400).isActive = true
-        }
+//        if UIDevice.current.userInterfaceIdiom == .pad {
+//            if let widthConstraint = contentView.constraints.first(where: { $0.firstAttribute == .width }) {
+//                widthConstraint.constant = UIScreen.main.bounds.width - 20
+//                widthConstraint.priority = UILayoutPriority(750)
+//            }
+//        }
     }
 
     @IBAction func btnLogin_touch(_ sender: Any) {
