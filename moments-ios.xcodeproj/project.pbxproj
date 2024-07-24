@@ -18,10 +18,8 @@
 		B80CEAF32C4CDB960099A15D /* moments_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CEAF22C4CDB960099A15D /* moments_iosUITestsLaunchTests.swift */; };
 		B80CEB002C4CE2080099A15D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CEAFF2C4CE2080099A15D /* LoginVC.swift */; };
 		B80CEB022C4CE2540099A15D /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CEB012C4CE2540099A15D /* ListVC.swift */; };
-		B80CEB052C4CE3F40099A15D /* ContentViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B80CEB042C4CE3F40099A15D /* ContentViewCell.xib */; };
-		B80CEB072C4CE6EF0099A15D /* ContentViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80CEB062C4CE6EF0099A15D /* ContentViewCell.swift */; };
-		B889A29B2C4E616300EC009B /* ImagesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B889A29A2C4E616300EC009B /* ImagesCell.xib */; };
-		B889A29D2C4E618500EC009B /* ImagesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B889A29C2C4E618500EC009B /* ImagesCell.swift */; };
+		B89440002C512768003E10B4 /* ContentViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8943FFF2C512768003E10B4 /* ContentViewCell.swift */; };
+		B89440052C513D85003E10B4 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B89440042C513D85003E10B4 /* SnapKit */; };
 		B8B3015D2C4E980F00204D7A /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B3015C2C4E980F00204D7A /* extension.swift */; };
 		B8FA69452C4D357D00328CFB /* Just in Frameworks */ = {isa = PBXBuildFile; productRef = B8FA69442C4D357D00328CFB /* Just */; };
 /* End PBXBuildFile section */
@@ -59,10 +57,7 @@
 		B80CEAF22C4CDB960099A15D /* moments_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moments_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B80CEAFF2C4CE2080099A15D /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		B80CEB012C4CE2540099A15D /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
-		B80CEB042C4CE3F40099A15D /* ContentViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentViewCell.xib; sourceTree = "<group>"; };
-		B80CEB062C4CE6EF0099A15D /* ContentViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewCell.swift; sourceTree = "<group>"; };
-		B889A29A2C4E616300EC009B /* ImagesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagesCell.xib; sourceTree = "<group>"; };
-		B889A29C2C4E618500EC009B /* ImagesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesCell.swift; sourceTree = "<group>"; };
+		B8943FFF2C512768003E10B4 /* ContentViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewCell.swift; sourceTree = "<group>"; };
 		B8B3015C2C4E980F00204D7A /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,6 +67,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8FA69452C4D357D00328CFB /* Just in Frameworks */,
+				B89440052C513D85003E10B4 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +111,6 @@
 		B80CEACE2C4CDB930099A15D /* moments-ios */ = {
 			isa = PBXGroup;
 			children = (
-				B80CEB032C4CE3C50099A15D /* UI */,
 				B80CEACF2C4CDB930099A15D /* AppDelegate.swift */,
 				B80CEAD12C4CDB930099A15D /* SceneDelegate.swift */,
 				B80CEAD32C4CDB930099A15D /* ViewController.swift */,
@@ -126,6 +121,7 @@
 				B80CEADA2C4CDB960099A15D /* LaunchScreen.storyboard */,
 				B80CEADD2C4CDB960099A15D /* Info.plist */,
 				B8B3015C2C4E980F00204D7A /* extension.swift */,
+				B8943FFF2C512768003E10B4 /* ContentViewCell.swift */,
 			);
 			path = "moments-ios";
 			sourceTree = "<group>";
@@ -147,17 +143,6 @@
 			path = "moments-iosUITests";
 			sourceTree = "<group>";
 		};
-		B80CEB032C4CE3C50099A15D /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				B80CEB042C4CE3F40099A15D /* ContentViewCell.xib */,
-				B80CEB062C4CE6EF0099A15D /* ContentViewCell.swift */,
-				B889A29A2C4E616300EC009B /* ImagesCell.xib */,
-				B889A29C2C4E618500EC009B /* ImagesCell.swift */,
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -176,6 +161,7 @@
 			name = "moments-ios";
 			packageProductDependencies = (
 				B8FA69442C4D357D00328CFB /* Just */,
+				B89440042C513D85003E10B4 /* SnapKit */,
 			);
 			productName = "moments-ios";
 			productReference = B80CEACC2C4CDB930099A15D /* moments-ios.app */;
@@ -251,6 +237,7 @@
 			mainGroup = B80CEAC32C4CDB930099A15D;
 			packageReferences = (
 				B8FA69432C4D357D00328CFB /* XCRemoteSwiftPackageReference "Just" */,
+				B89440032C513D85003E10B4 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = B80CEACD2C4CDB930099A15D /* Products */;
 			projectDirPath = "";
@@ -270,8 +257,6 @@
 			files = (
 				B80CEADC2C4CDB960099A15D /* LaunchScreen.storyboard in Resources */,
 				B80CEAD92C4CDB960099A15D /* Assets.xcassets in Resources */,
-				B80CEB052C4CE3F40099A15D /* ContentViewCell.xib in Resources */,
-				B889A29B2C4E616300EC009B /* ImagesCell.xib in Resources */,
 				B80CEAD72C4CDB930099A15D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,11 +284,10 @@
 			files = (
 				B80CEAD42C4CDB930099A15D /* ViewController.swift in Sources */,
 				B80CEB022C4CE2540099A15D /* ListVC.swift in Sources */,
-				B80CEB072C4CE6EF0099A15D /* ContentViewCell.swift in Sources */,
 				B80CEAD02C4CDB930099A15D /* AppDelegate.swift in Sources */,
 				B80CEB002C4CE2080099A15D /* LoginVC.swift in Sources */,
-				B889A29D2C4E618500EC009B /* ImagesCell.swift in Sources */,
 				B80CEAD22C4CDB930099A15D /* SceneDelegate.swift in Sources */,
+				B89440002C512768003E10B4 /* ContentViewCell.swift in Sources */,
 				B8B3015D2C4E980F00204D7A /* extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,8 +473,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -517,8 +502,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -666,6 +652,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		B89440032C513D85003E10B4 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		B8FA69432C4D357D00328CFB /* XCRemoteSwiftPackageReference "Just" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/dduan/Just.git";
@@ -677,6 +671,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B89440042C513D85003E10B4 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B89440032C513D85003E10B4 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
 		B8FA69442C4D357D00328CFB /* Just */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B8FA69432C4D357D00328CFB /* XCRemoteSwiftPackageReference "Just" */;

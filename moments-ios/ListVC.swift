@@ -8,19 +8,19 @@
 import UIKit
 
 class ListVC: UIViewController,UITableViewDataSource, UITableViewDelegate {
-    @IBOutlet weak var tableview: UITableView!
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        tableview.register(ContentViewCell.nib(), forCellReuseIdentifier: ContentViewCell.identifier)
-        tableview.dataSource = self
-        tableview.delegate = self
-        tableview.separatorStyle = .singleLine
-        tableview.separatorColor = UIColor.clear
-        tableview.separatorInset = .zero
-        tableview.estimatedRowHeight = 44.0
-        tableview.rowHeight = UITableView.automaticDimension
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.separatorStyle = .singleLine
+        tableView.separatorColor = UIColor.clear
+        tableView.separatorInset = .zero
+        tableView.estimatedRowHeight = 44.0
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+        tableView.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
     }
     
      func numberOfSections(in tableView: UITableView) -> Int {
@@ -37,7 +37,8 @@ class ListVC: UIViewController,UITableViewDataSource, UITableViewDelegate {
     }
     
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-         let cell = tableView.dequeueReusableCell(withIdentifier: ContentViewCell.identifier, for: indexPath) as! ContentViewCell;
+         let cell = tableView.dequeueReusableCell(withIdentifier: ContentViewCell.identifier, for: indexPath) as! ContentViewCell
+         cell.selectionStyle = .none;
          let items = [
             "使用View Hierarchy Debugger检查",
             "确保在Storyboard中为UICollectionViewCell添加了足够的约束",
@@ -47,15 +48,22 @@ class ListVC: UIViewController,UITableViewDataSource, UITableViewDelegate {
         "有时候模拟器可能会出现显示问题，尝试重置模拟器状态或者使用不同的模拟器进行测试。",
         "在Xcode中选择菜单中的\"Product\" -> \"Clean Build Folder\"来清理项目，然后重新编译和运行，以确保加载最新的布局设置和代码"]
          let text = items[indexPath.row] //getRandomText(from: items)
-         cell.setLayoutAndData()
-         cell.setAvatar(url: URL(string: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC28lvhB3X_P4cDQ17N2RQvttJRUYagluoPw&s")!)
-         cell.setData(name: "akari", content: text, imgs: [
+         cell.imgAvatar.setImageByUrl(url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC28lvhB3X_P4cDQ17N2RQvttJRUYagluoPw&s")
+         cell.lblName.text = "akari"
+         cell.lblContent.text = text
+         
+         let arr = [
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC28lvhB3X_P4cDQ17N2RQvttJRUYagluoPw&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzoXP3RVn2l6NnIp7K0oz6xkb7zUgTkBQNEQ&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnMbAtJt52Ig2grCEmbgi9XcimIhr2rEnd4w&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC28lvhB3X_P4cDQ17N2RQvttJRUYagluoPw&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzoXP3RVn2l6NnIp7K0oz6xkb7zUgTkBQNEQ&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnMbAtJt52Ig2grCEmbgi9XcimIhr2rEnd4w&s",
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC28lvhB3X_P4cDQ17N2RQvttJRUYagluoPw&s",
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzoXP3RVn2l6NnIp7K0oz6xkb7zUgTkBQNEQ&s",
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnMbAtJt52Ig2grCEmbgi9XcimIhr2rEnd4w&s"
-         ])
-         
+         ];
+         cell.setupImagesGrid(Array(arr[0..<indexPath.row + 3]))
          return cell
-     }
-
+    }
 }
