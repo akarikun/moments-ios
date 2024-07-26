@@ -8,7 +8,7 @@
 import UIKit
 
 extension UIImageView {
-    func setImageByUrl(url:String) {
+    func setImageByUrl(_ url:String) {
         let _this = self
         DispatchQueue.global().async { [weak self] in
             if let data = try? Data(contentsOf: URL(string: url)!) {
@@ -19,5 +19,12 @@ extension UIImageView {
                 }
             }
         }
+    }
+}
+
+extension UIView {
+    func setBorder(_ color: UIColor){
+        self.layer.borderWidth = 1
+        self.layer.borderColor = color.cgColor
     }
 }
