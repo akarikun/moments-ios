@@ -11,6 +11,9 @@ class ListVC: UIViewController,UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var imageContainerView: UIView!
     @IBOutlet weak var imageFullscreen: UIImageView!
+    @IBOutlet weak var backImageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var postImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -23,15 +26,26 @@ class ListVC: UIViewController,UITableViewDataSource, UITableViewDelegate {
         tableView.rowHeight = UITableView.automaticDimension
         tableView.tableHeaderView = nil
         tableView.tableFooterView = nil
+        
+        backImageView.isUserInteractionEnabled = true
+        backImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(back_handleTap)))
+        postImageView.isUserInteractionEnabled = true
+        postImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(post_handleTap)))
     }
-    
-     func numberOfSections(in tableView: UITableView) -> Int {
-       return 1
-     }
+    @objc func back_handleTap(gesture: UITapGestureRecognizer) {
+        navigationController?.popViewController(animated: true)
+    }
+    @objc func post_handleTap(gesture: UITapGestureRecognizer){
+        let postVC = (storyboard?.instantiateViewController(withIdentifier: "PostVC"))!
+        navigationController?.pushViewController(postVC, animated: true)
+    }
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
 
-     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       return 9
-     }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 9
+    }
     
     func getRandomText(from items: [String]!) -> String {
         let randomIndex = Int(arc4random_uniform(UInt32(items.count)))
