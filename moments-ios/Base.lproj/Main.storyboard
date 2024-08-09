@@ -337,42 +337,9 @@
                                     </textView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZuM-vC-2vS">
                                         <rect key="frame" x="8" y="144" width="398" height="128"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VJ5-45-o5L">
-                                                <rect key="frame" x="8" y="8" width="382" height="112"/>
-                                                <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CarbonAddLarge" translatesAutoresizingMaskIntoConstraints="NO" id="8QW-AG-JIM">
-                                                        <rect key="frame" x="0.0" y="6" width="127.5" height="100"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="100" id="FdL-YU-LTd"/>
-                                                        </constraints>
-                                                    </imageView>
-                                                </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <constraints>
-                                                    <constraint firstItem="8QW-AG-JIM" firstAttribute="width" secondItem="VJ5-45-o5L" secondAttribute="width" multiplier="1/3" id="Die-BB-AMJ"/>
-                                                    <constraint firstItem="8QW-AG-JIM" firstAttribute="leading" secondItem="VJ5-45-o5L" secondAttribute="leading" id="ZiS-c6-4zA"/>
-                                                    <constraint firstItem="8QW-AG-JIM" firstAttribute="top" secondItem="VJ5-45-o5L" secondAttribute="top" constant="6" id="uRo-pT-okI"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IiU-ix-hIP">
-                                                <rect key="frame" x="0.0" y="127" width="398" height="1"/>
-                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="1" id="QVJ-46-avy"/>
-                                                </constraints>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="VJ5-45-o5L" firstAttribute="top" secondItem="ZuM-vC-2vS" secondAttribute="top" constant="8" id="UCG-Na-hxi"/>
-                                            <constraint firstItem="VJ5-45-o5L" firstAttribute="leading" secondItem="ZuM-vC-2vS" secondAttribute="leading" constant="8" id="VGC-aA-2Yl"/>
                                             <constraint firstAttribute="height" constant="128" id="ZrD-CL-rL9"/>
-                                            <constraint firstItem="IiU-ix-hIP" firstAttribute="leading" secondItem="ZuM-vC-2vS" secondAttribute="leading" id="gSJ-qT-8Lj"/>
-                                            <constraint firstAttribute="trailing" secondItem="IiU-ix-hIP" secondAttribute="trailing" id="iNa-dv-KPo"/>
-                                            <constraint firstAttribute="bottom" secondItem="IiU-ix-hIP" secondAttribute="bottom" id="lqh-g7-PL6"/>
-                                            <constraint firstAttribute="trailing" secondItem="VJ5-45-o5L" secondAttribute="trailing" constant="8" id="npV-iA-mTV"/>
-                                            <constraint firstAttribute="bottom" secondItem="VJ5-45-o5L" secondAttribute="bottom" constant="8" id="t21-rD-usX"/>
+                                            <constraint firstAttribute="width" constant="398" id="qbB-0Z-uu2"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dda-Ap-z7K">
@@ -482,14 +449,14 @@
                                 <constraints>
                                     <constraint firstItem="PBt-73-4Ne" firstAttribute="top" secondItem="liy-pp-Eyd" secondAttribute="top" constant="8" id="0eN-Ff-4sD"/>
                                     <constraint firstItem="Dda-Ap-z7K" firstAttribute="top" secondItem="ZuM-vC-2vS" secondAttribute="bottom" id="1UC-Ad-RnU"/>
+                                    <constraint firstItem="ZuM-vC-2vS" firstAttribute="leading" secondItem="liy-pp-Eyd" secondAttribute="leading" priority="700" constant="8" id="2GJ-GX-KWK"/>
                                     <constraint firstAttribute="trailing" secondItem="Dda-Ap-z7K" secondAttribute="trailing" constant="8" id="3CH-gw-PQe"/>
                                     <constraint firstItem="PBt-73-4Ne" firstAttribute="leading" secondItem="liy-pp-Eyd" secondAttribute="leading" constant="8" id="CIU-Oy-0D6"/>
                                     <constraint firstItem="ZuM-vC-2vS" firstAttribute="top" secondItem="PBt-73-4Ne" secondAttribute="bottom" constant="8" id="LPk-yD-jns"/>
                                     <constraint firstAttribute="trailing" secondItem="PBt-73-4Ne" secondAttribute="trailing" constant="8" id="YtY-cY-erB"/>
-                                    <constraint firstAttribute="trailing" secondItem="ZuM-vC-2vS" secondAttribute="trailing" constant="8" id="bPM-yb-jPL"/>
                                     <constraint firstAttribute="bottom" secondItem="Dda-Ap-z7K" secondAttribute="bottom" constant="8" id="h6D-Nh-E5s"/>
+                                    <constraint firstItem="ZuM-vC-2vS" firstAttribute="centerX" secondItem="liy-pp-Eyd" secondAttribute="centerX" priority="700" id="kAM-qh-wBf"/>
                                     <constraint firstItem="Dda-Ap-z7K" firstAttribute="leading" secondItem="liy-pp-Eyd" secondAttribute="leading" constant="8" id="od5-51-LDR"/>
-                                    <constraint firstItem="ZuM-vC-2vS" firstAttribute="leading" secondItem="liy-pp-Eyd" secondAttribute="leading" constant="8" id="vgw-iG-czw"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -507,7 +474,7 @@
                     </view>
                     <connections>
                         <outlet property="backImageView" destination="Bzb-t2-Atf" id="zKT-Ym-mvE"/>
-                        <outlet property="imageContainerView" destination="VJ5-45-o5L" id="mUG-Mt-Ngx"/>
+                        <outlet property="imageContainerView" destination="ZuM-vC-2vS" id="wJi-wc-dnh"/>
                         <outlet property="pmsLabel" destination="KZg-VF-LDJ" id="LJ6-AM-0Se"/>
                         <outlet property="pmsSwitch" destination="x5s-j3-PfE" id="u5Q-Cz-Mjt"/>
                         <outlet property="pstText" destination="K6e-dj-C9z" id="AuG-lt-hn2"/>
@@ -539,7 +506,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="CarbonAddLarge" width="512" height="512"/>
         <image name="CarbonEdit" width="512" height="512"/>
         <image name="CarbonLocationFilled" width="512" height="512"/>
         <image name="CarbonUserAvatarFilled" width="512" height="512"/>
