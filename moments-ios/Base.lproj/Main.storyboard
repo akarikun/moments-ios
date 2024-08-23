@@ -343,7 +343,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dda-Ap-z7K">
-                                        <rect key="frame" x="8" y="272" width="398" height="494"/>
+                                        <rect key="frame" x="8" y="282" width="398" height="484"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rkr-iv-rHf">
                                                 <rect key="frame" x="0.0" y="0.0" width="398" height="44"/>
@@ -448,7 +448,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="PBt-73-4Ne" firstAttribute="top" secondItem="liy-pp-Eyd" secondAttribute="top" constant="8" id="0eN-Ff-4sD"/>
-                                    <constraint firstItem="Dda-Ap-z7K" firstAttribute="top" secondItem="ZuM-vC-2vS" secondAttribute="bottom" id="1UC-Ad-RnU"/>
+                                    <constraint firstItem="Dda-Ap-z7K" firstAttribute="top" secondItem="ZuM-vC-2vS" secondAttribute="bottom" constant="10" id="1UC-Ad-RnU"/>
                                     <constraint firstItem="ZuM-vC-2vS" firstAttribute="leading" secondItem="liy-pp-Eyd" secondAttribute="leading" priority="700" constant="8" id="2GJ-GX-KWK"/>
                                     <constraint firstAttribute="trailing" secondItem="Dda-Ap-z7K" secondAttribute="trailing" constant="8" id="3CH-gw-PQe"/>
                                     <constraint firstItem="PBt-73-4Ne" firstAttribute="leading" secondItem="liy-pp-Eyd" secondAttribute="leading" constant="8" id="CIU-Oy-0D6"/>
