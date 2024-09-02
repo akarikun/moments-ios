@@ -11,12 +11,19 @@ class ListVC: UIViewController,UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var imageContainerView: UIView!
     @IBOutlet weak var imageFullscreen: UIImageView!
-    @IBOutlet weak var backImageView: UIImageView!
+    @IBOutlet weak var cfgImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var postImageView: UIImageView!
+    var sns:SNSProtocol?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        if sns != nil {
+            titleLabel.text = sns?.title
+        }
+        
         tableView.dataSource = self
         tableView.delegate = self
         tableView.separatorStyle = .singleLine
@@ -27,13 +34,13 @@ class ListVC: UIViewController,UITableViewDataSource, UITableViewDelegate {
         tableView.tableHeaderView = nil
         tableView.tableFooterView = nil
         
-        backImageView.isUserInteractionEnabled = true
-        backImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(back_handleTap)))
+        cfgImageView.isUserInteractionEnabled = true
+        cfgImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(cfg_handleTap)))
         postImageView.isUserInteractionEnabled = true
         postImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(post_handleTap)))
     }
-    @objc func back_handleTap(gesture: UITapGestureRecognizer) {
-        navigationController?.popViewController(animated: true)
+    @objc func cfg_handleTap(gesture: UITapGestureRecognizer) {
+        
     }
     @objc func post_handleTap(gesture: UITapGestureRecognizer){
         let postVC = (storyboard?.instantiateViewController(withIdentifier: "PostVC"))!

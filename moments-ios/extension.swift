@@ -28,3 +28,16 @@ extension UIView {
         self.layer.borderColor = color.cgColor
     }
 }
+
+extension UIViewController {
+    func showAlert(message:String,title:String?){
+        let alertController = UIAlertController(
+            title: title ?? "错误",
+            message: message,
+            preferredStyle: .alert
+        )
+        let okayAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertController.addAction(okayAction)
+        present(alertController, animated: true, completion: nil)
+    }
+}
